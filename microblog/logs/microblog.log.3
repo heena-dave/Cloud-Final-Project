@@ -1,0 +1,129 @@
+2018-05-09 23:42:45,864 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'bool' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'bool' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a bool.
+2018-05-09 23:43:18,521 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:43:22,887 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'bool' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'bool' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a bool.
+2018-05-09 23:45:35,892 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:45:39,956 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 272, in profilepictures
+    return user.avatar(256)
+AttributeError: 'function' object has no attribute 'avatar'
+2018-05-09 23:46:24,625 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:46:27,500 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2018-05-09 23:48:13,576 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:48:19,119 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2018-05-09 23:51:12,612 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:51:49,429 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:52:04,118 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2018-05-09 23:52:44,126 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]

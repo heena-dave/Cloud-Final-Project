@@ -1,0 +1,38 @@
+    <table class="table table-hover">
+        <tr>
+            <td width="70px">
+                <a href="{{ url_for('user', username=post.author.username) }}">
+					<img width="100px" height="100px" src="{{ url_for('profilepictures',path=post.author.username+'.png') }}" onerror="this.src='{{ post.author.avatar(70) }}'">				
+                </a>
+            </td>
+            <td>
+                {% set user_link %}
+                    <a href="{{ url_for('user', username=post.author.username) }}">
+                        {{ post.author.username }}
+                    </a>
+                {% endset %}
+                {{ _('%(username)s said %(when)s',
+                    username=user_link, when=moment(post.timestamp).fromNow()) }}
+                <br>
+                <span id="post{{ post.id }}">{{ post.body }}</span>
+                <br>
+                <span>{{post.language}}</span> 
+                <br>
+                {% if post.language and post.language != g.locale %}
+                <br><br>
+                <span id="translation{{ post.id }}">
+                    <a href="javascript:translate(
+                                '#post{{ post.id }}',
+                                '#translation{{ post.id }}',
+                                '{{ post.language }}',
+                                '{{ g.locale }}');">{{ _('Translate') }}</a>
+                </span>
+                {% endif %}
+				<span>
+					<a href="{{ url_for('sendemail', post=post.id) }}">
+						<img src="{{ url_for('loadimage', filename='email-icon.png') }}" width="35" height="35"/>
+					</a>
+				</span>
+            </td>
+        </tr>
+    </table>

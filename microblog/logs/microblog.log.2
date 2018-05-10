@@ -1,0 +1,77 @@
+2018-05-09 23:52:52,639 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2018-05-09 23:53:12,710 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:54:25,615 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:57:25,683 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:58:56,981 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:59:02,893 ERROR: Exception on /index [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 51, in index
+    user = User.query.filter_by(username=current_user).first()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\orm\query.py", line 1632, in filter_by
+    for key, value in kwargs.items()]
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\orm\query.py", line 1632, in <listcomp>
+    for key, value in kwargs.items()]
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\operators.py", line 344, in __eq__
+    return self.operate(eq, other)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\orm\attributes.py", line 180, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\operators.py", line 344, in __eq__
+    return self.operate(eq, other)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\orm\properties.py", line 270, in operate
+    return op(self.__clause_element__(), *other, **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\annotation.py", line 105, in __eq__
+    return self.__element.__class__.__eq__(self, other)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\operators.py", line 344, in __eq__
+    return self.operate(eq, other)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\elements.py", line 692, in operate
+    return op(self.comparator, *other, **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\operators.py", line 344, in __eq__
+    return self.operate(eq, other)
+  File "<string>", line 1, in <lambda>
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\type_api.py", line 63, in operate
+    return o[0](self.expr, op, *(other + o[1:]), **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\default_comparator.py", line 68, in _boolean_compare
+    obj = _check_literal(expr, op, obj)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\default_comparator.py", line 322, in _check_literal
+    return expr._bind_param(operator, other, type_=bindparam_type)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\elements.py", line 3849, in _bind_param
+    unique=True)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\elements.py", line 1120, in __init__
+    _compared_to_operator, value)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\type_api.py", line 537, in coerce_compared_value
+    _coerced_type = _resolve_value_to_type(value)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\sqlalchemy\sql\sqltypes.py", line 2719, in _resolve_value_to_type
+    "Object %r is not legal as a SQL literal value" % value)
+sqlalchemy.exc.ArgumentError: Object <User hinz> is not legal as a SQL literal value
+2018-05-09 23:59:54,081 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:00:43,898 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:03:46,526 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:07:52,198 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:14:07,093 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:14:30,636 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:21:29,260 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:35:45,784 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]

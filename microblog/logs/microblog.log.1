@@ -1,0 +1,113 @@
+2018-05-10 00:35:51,224 ERROR: Exception on /index [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 53, in index
+    prev_url=prev_url,user=current_user)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\_post.html", line 32, in top-level template code
+    <img src="{{ url_for('loadimage', filename='email-icon.png') }}" width="50" height="50"/>
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint 'loadimage' with values ['filename']. Did you forget to specify values ['path']?
+2018-05-10 00:36:07,384 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:36:49,392 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:37:13,426 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:37:41,262 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:38:14,940 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:39:13,583 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:39:51,622 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:43:20,507 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:43:26,597 ERROR: Exception on /sendemail/15 [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2018-05-10 00:45:45,121 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:45:54,193 ERROR: Exception on /sendemail/15 [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1957, in make_response
+    'The view function did not return a valid response. The'
+TypeError: The view function did not return a valid response. The function either returned None or ended without a return statement.
+2018-05-10 00:46:30,175 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:48:34,974 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:51:52,585 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-10 00:51:59,389 ERROR: Exception on /sendemail/16 [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 277, in sendemail
+    send_email(subject,app.config['ADMINS'][0],current_user.email,body,"<html></html>")
+NameError: name 'send_email' is not defined
+2018-05-10 00:52:18,474 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]

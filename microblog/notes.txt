@@ -1,0 +1,1 @@
+Azure Translate Key = 5279b9fe290f4c84a7a4d15b926a4a45

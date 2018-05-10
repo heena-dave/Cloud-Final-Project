@@ -1,0 +1,108 @@
+2018-05-09 20:57:22,186 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 20:58:22,084 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 20:59:12,175 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:01:25,610 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:11:13,380 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:12:39,828 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:12:59,614 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:13:51,127 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:14:02,325 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:14:17,587 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:14:41,053 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:15:31,236 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:17:31,229 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:17:46,161 ERROR: Exception on /explore [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 69, in explore
+    prev_url=prev_url)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\index.html", line 2, in top-level template code
+    {% import 'bootstrap/wtf.html' as wtf %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\index.html", line 11, in block "app_content"
+    {% include '_post.html' %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\_post.html", line 5, in top-level template code
+    {% if user.displayProfilePicture == None or user.displayProfilePicture == False %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 430, in getattr
+    return getattr(obj, attribute)
+jinja2.exceptions.UndefinedError: 'user' is undefined
+2018-05-09 21:18:25,257 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:18:59,725 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:21:21,125 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 21:22:06,056 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:30:19,976 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:32:43,378 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:33:38,160 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:35:58,310 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 23:36:02,262 ERROR: Exception on /hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'bool' object is not callable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1816, in full_dispatch_request
+    return self.finalize_request(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1831, in finalize_request
+    response = self.make_response(rv)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1982, in make_response
+    reraise(TypeError, new_error, sys.exc_info()[2])
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 34, in reraise
+    raise value.with_traceback(tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1974, in make_response
+    rv = self.response_class.force_type(rv, request.environ)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 921, in force_type
+    response = BaseResponse(*_run_wsgi_app(response, environ))
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\wrappers.py", line 59, in _run_wsgi_app
+    return _run_wsgi_app(*args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\test.py", line 923, in run_wsgi_app
+    app_rv = app(environ, start_response)
+TypeError: 'bool' object is not callable
+The view function did not return a valid response. The return type must be a string, tuple, Response instance, or WSGI callable, but it was a bool.
+2018-05-09 23:36:31,592 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]

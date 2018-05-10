@@ -1,0 +1,113 @@
+2018-05-09 01:02:22,369 ERROR: Exception on /user/hinz [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_login\utils.py", line 261, in decorated_view
+    return func(*args, **kwargs)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 155, in user
+    next_url=next_url, prev_url=prev_url,image=username+'.png')
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\templating.py", line 135, in render_template
+    context, ctx.app)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\templating.py", line 117, in _render
+    rv = template.render(context)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\asyncsupport.py", line 76, in render
+    return original_render(self, *args, **kwargs)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 1008, in render
+    return self.environment.handle_exception(exc_info, True)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\environment.py", line 780, in handle_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\jinja2\_compat.py", line 37, in reraise
+    raise value.with_traceback(tb)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\user.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\base.html", line 1, in top-level template code
+    {% extends 'bootstrap/base.html' %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 1, in top-level template code
+    {% block doc -%}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 4, in block "doc"
+    {%- block html %}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 20, in block "html"
+    {% block body -%}
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask_bootstrap\templates\bootstrap\base.html", line 23, in block "body"
+    {% block content -%}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\base.html", line 48, in block "content"
+    {% block app_content %}{% endblock %}
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\templates\user.html", line 9, in block "app_content"
+    <img src="{{ url_for('/profilepictures/',path=image) }}">
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\helpers.py", line 356, in url_for
+    return appctx.app.handle_url_build_error(error, endpoint, values)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2061, in handle_url_build_error
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\helpers.py", line 345, in url_for
+    force_external=external)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\werkzeug\routing.py", line 1776, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.BuildError: Could not build url for endpoint '/profilepictures/' with values ['path']. Did you mean 'profilepictures' instead?
+2018-05-09 01:03:01,684 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:03:06,025 ERROR: Exception on /profilepictures/hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 259, in profilepictures
+    return send_from_directory(app.config['UPLOAD_FOLDER'], path)
+NameError: name 'send_from_directory' is not defined
+2018-05-09 01:03:42,514 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:05:33,790 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:05:39,049 ERROR: Exception on /profilepictures/hinz.png [GET] [in d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py:1761]
+Traceback (most recent call last):
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 2292, in wsgi_app
+    response = self.full_dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1815, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1718, in handle_user_exception
+    reraise(exc_type, exc_value, tb)
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\_compat.py", line 35, in reraise
+    raise value
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1813, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "d:\study\clouda~1\final-~1\myenv\lib\site-packages\flask\app.py", line 1799, in dispatch_request
+    return self.view_functions[rule.endpoint](**req.view_args)
+  File "D:\STUDY\Cloud Application Design\Final-Project\microblog\app\routes.py", line 259, in profilepictures
+    return send_from_directory(os.path.join(app.config['UPLOAD_FOLDER'], path))
+TypeError: send_from_directory() missing 1 required positional argument: 'filename'
+2018-05-09 01:05:59,660 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:08:54,274 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:09:21,352 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:10:00,193 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:11:30,332 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:12:39,474 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:14:35,883 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:16:07,308 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:17:20,600 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:17:40,697 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:17:55,104 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:18:45,600 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:19:25,454 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:19:46,381 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:22:16,080 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:23:58,342 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:24:39,766 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:26:29,778 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
+2018-05-09 01:28:22,934 INFO: Microblog startup [in D:\STUDY\Cloud Application Design\Final-Project\microblog\app\__init__.py:52]
