@@ -209,7 +209,7 @@ def translate_text():
                                       request.form['source_language'],
                                       request.form['dest_language'])})
 									  
-@app.route('/uplodadpicture', methods=['GET','POST'])
+@app.route('/uploadpicture', methods=['GET','POST'])
 @login_required
 def upload_picture():
 	message = ""

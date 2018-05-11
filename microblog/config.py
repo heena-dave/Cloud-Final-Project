@@ -16,3 +16,4 @@ class Config(object):
 	LANGUAGES = ['en', 'es']
 	POSTS_PER_PAGE = 5
 	MS_TRANSLATOR_KEY = os.environ.get('MS_TRANSLATOR_KEY')
+	SECURITY_EMAIL_SENDER = 'couchpotatoes.kentstate@gmail.com'

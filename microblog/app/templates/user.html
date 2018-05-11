@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block app_content %}
-	<form action="/uplodadpicture" method="post" enctype='multipart/form-data'>
+	<form action="/uploadpicture" method="post" enctype='multipart/form-data'>
 		<table class="table table-hover">
 			<tr>
 				<td width="256px" style="max-width:256px;">{% if user.displayProfilePicture == None or user.displayProfilePicture == False %}<img src="{{ user.avatar(240) }}">
