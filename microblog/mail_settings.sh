@@ -1,5 +1,6 @@
-set MAIL_SERVER=smtp.googlemail.com
-set MAIL_PORT=587
-set MAIL_USE_TLS=1
-set MAIL_USERNAME=couchpotatoes.kentstate@gmail.com
-set MAIL_PASSWORD=Couchpotatoes@2018kentstate
+export MAIL_SERVER=smtp.googlemail.com
+export MAIL_PORT=587
+export MAIL_USE_TLS=1
+export MAIL_USERNAME=couchpotatoes.kentstate@gmail.com
+export MAIL_PASSWORD=Couchpotatoes@2018kentstate
+export MS_TRANSLATOR_KEY=5279b9fe290f4c84a7a4d15b926a4a45
