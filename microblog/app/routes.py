@@ -273,9 +273,10 @@ def loadimage(filename):
 @login_required
 def sendemail(post):
 	userPost = Post.query.filter_by(id=post).first()
+	userDetails = User.query.filter_by(id=userPost.user_id).first()
 	subject = "Microblog - Comment"
 	body = "Dear {{ current_user.username }}, You have requested to email the following comment: {{userPost.body}} The comment was posted by {{userPost.user_id}} on {{userPost.timestamp}} Sincerely, The Microblog Team"
-	html = "<p>Dear {{ current_user.username }},</p><br/><p>You have requested to email the following comment: {{userPost.body}}</p><br/><p>The comment was posted by {{userPost.user_id}} on {{userPost.timestamp}}</p><br/><br/><p>Sincerely, The Microblog Team</p>"
-	send_email(subject,app.config['ADMINS'][0],current_user.email,body,html)
+	html = "<p>Dear "+ str(current_user.username) +",</p><br/><p>You have requested to email the following comment: "+ str(userPost.body) +"</p><br/><p>The comment was posted by "+ str(userDetails.username) + " on "+ str(userPost.timestamp) +"</p><br/><br/><p>Sincerely,<br/>The Microblog Team</p>"
+	send_email(subject,app.config['ADMINS'][0],[current_user.email],body,html)
 	flash("Email is sent successfully.")
 	return user(current_user.username)
